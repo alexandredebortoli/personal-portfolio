@@ -68,3 +68,25 @@ export const projectsData = [
     websiteUrl: "https://alexandredebortoli.github.io/calculadora-financeira",
   },
 ] as const;
+
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "NestJS",
+  "Git",
+  "Tailwind",
+  "Prisma",
+  "MongoDB",
+  "Sequelize",
+  "Fastify",
+  "Express",
+  "PostgreSQL",
+  "Jest",
+  "Python",
+  "Django",
+] as const;
