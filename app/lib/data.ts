@@ -2,6 +2,10 @@ import wslFantasy from "@/public/wsl_fantasy.png";
 import planningPoker from "@/public/planning_poker.png";
 import financialCalculator from "@/public/financial_calculator.png";
 import portfolioWebsite from "@/public/portfolio_website.png";
+import React from "react";
+import { LuGraduationCap } from "react-icons/lu";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
 
 export const links = [
   {
@@ -89,4 +93,26 @@ export const skillsData = [
   "Jest",
   "Python",
   "Django",
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Title 3",
+    description: "description 3",
+    icon: React.createElement(FaReact),
+    date: "2022- present",
+  },
+  {
+    title: "Title 2",
+    description: "description 2",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Title 1",
+    description:
+      "description 1 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021",
+  },
 ] as const;
