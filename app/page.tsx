@@ -4,6 +4,7 @@ import About from "@/app/ui/about";
 import Projects from "@/app/ui/projects";
 import Skills from "@/app/ui/skills";
 import Experience from "@/app/ui/experience";
+import Contact from "@/app/ui/contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
+      <Contact />
     </main>
   );
 }
