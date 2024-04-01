@@ -50,8 +50,8 @@ export const projectsData = [
       "This portfolio site, showcases my development projects, technical skills, and a contact form to get in touch with me.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind"],
     imageUrl: portfolioWebsite,
-    githubUrl: "https://github.com/alexandredebortoli/alexandredebortoli",
-    websiteUrl: "https://wsl-fantasy.herokuapp.com/",
+    githubUrl: "https://github.com/alexandredebortoli/personal-portfolio",
+    websiteUrl: "https://alexandre-debortoli.vercel.app/",
   },
   {
     title: "Planning Poker App",
