@@ -97,22 +97,31 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "Title 3",
-    description: "description 3",
-    icon: React.createElement(FaReact),
-    date: "2022- present",
-  },
-  {
-    title: "Title 2",
-    description: "description 2",
-    icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2022",
-  },
-  {
-    title: "Title 1",
+    title: "Software Engineer",
     description:
-      "description 1 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Developed scalable distributed web applications for finance industry utilizing microservices architecture with Fastify, PostgreSQL, MongoDB, and AWS Cloud services (S3, SQS, Cognito). Enable communication through gRPC and HTTP protocols. Automate operational tasks and data manipulation in Python for on-call support and AWS management.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
+  },
+  {
+    title: "Software Engineer Intern",
+    description:
+      "Developed and maintained scalable microservices, contributed to feature planning, design, and implementation. Conducted test automation (unit and integration testing) and demonstrated a keenness for learning new technologies.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Full-stack Developer Trainee",
+    description:
+      "Completed 200-hour full-stack development course, including practical assignments and final projects. Recognized as a top performer and awarded scholarship.",
+    icon: React.createElement(FaReact),
+    date: "2022",
+  },
+  {
+    title: "Computer Enginnering",
+    description:
+      "Currently pursuing a Bachelor's Degree in Computer Engineering.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021",
+    date: "2021 - present",
   },
 ] as const;
