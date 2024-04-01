@@ -36,13 +36,13 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "World Surf League Fantasy Game",
+    title: "WSL Fantasy Game",
     description:
       "WSL Fantasy Game for predicting top surfers for each event. Web scraper gathers real-time surfer rankings & event results.",
-    tags: ["Python", "Django", "Postgres", "Web Scraping", "Javascript"],
+    tags: ["Python", "Django", "Postgres", "Web Scraping"],
     imageUrl: wslFantasy,
-    githubUrl: "",
-    websiteUrl: "https://wsl-fantasy.herokuapp.com/",
+    githubUrl: "https://github.com/alexandredebortoli/fantasy-surf-league",
+    websiteUrl: "https://fantasy-surf-league.onrender.com/",
   },
   {
     title: "My Portfolio Website",
@@ -60,7 +60,7 @@ export const projectsData = [
     tags: ["Typescript", "React Native", "Node.js", "Websockets"],
     imageUrl: planningPoker,
     githubUrl: "https://github.com/alexandredebortoli/sprint-vote",
-    websiteUrl: "",
+    websiteUrl: null,
   },
   {
     title: "Financial Calculator",

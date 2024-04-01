@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/app/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { FaCode, FaHourglassHalf, FaLink } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  githubUrl,
+  websiteUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -28,10 +31,10 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+      <section className="bg-gray-100 max-w-[46rem] border border-black/5 rounded-lg overflow-hidden relative sm:h-[20rem] hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white flex">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
@@ -48,23 +51,28 @@ export default function Project({
           </ul>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] h-[15.89] object-cover rounded-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-        />
+        <div className="flex flex-col gap-6 justify-center items-center w-1/2 pl-2 pr-6 sm:px-4">
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            className=" hidden sm:block max-w-1/2 max-h-[15rem] object-contain rounded-lg"
+          />
+          <div className="flex gap-6 sm:gap-10 text-xl text-gray-700 dark:text-white/70 justify-center items-center">
+            {websiteUrl ? (
+              <a href={websiteUrl} title="Project Website" target="_blank">
+                <FaLink />
+              </a>
+            ) : (
+              <a title="Project In Progress">
+                <FaHourglassHalf />
+              </a>
+            )}
+            <a href={githubUrl} title="Project Code" target="_blank">
+              <FaCode />
+            </a>
+          </div>
+        </div>
       </section>
     </motion.div>
   );
