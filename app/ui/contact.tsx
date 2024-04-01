@@ -14,7 +14,7 @@ function SubmitBtn() {
   return (
     <button
       type="submit"
-      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:bg-opacity-50"
+      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:bg-opacity-50 dark:bg-white dark:bg-opacity-10"
       aria-disabled={pending}
       disabled={pending}
     >
@@ -56,19 +56,19 @@ export default function Contact() {
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
     >
       <SectionTitle>Contact me</SectionTitle>
-      <p className="text-gray-700 -mt-5">
+      <p className="text-gray-700 -mt-5 dark:text-white/80">
         Please contact directly at{" "}
         <a href="mailto:asdebortoli@gmail.com" className="underline">
           asdebortoli@gmail.com
         </a>{" "}
         or through this form.
       </p>
-      <form className="mt-10 flex flex-col" action={dispatch}>
+      <form className="mt-10 flex flex-col dark:text-black" action={dispatch}>
         <input
           id="sender"
           name="sender"
           type="email"
-          className="h-14 rounded-lg borderBlack p-4 focus:outline-none focus:border-2 focus:border-black"
+          className="h-14 rounded-lg borderBlack p-4 focus:outline-none focus:border-2 focus:border-black dark:focus:border-0 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
           placeholder="Your email"
           aria-describedby="sender-error"
           onChange={(e) => setInputSender(e.target.value)}
@@ -88,7 +88,7 @@ export default function Contact() {
         <textarea
           id="message"
           name="message"
-          className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-none focus:border-2 focus:border-black"
+          className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-none focus:border-2 focus:border-black dark:focus:border-0 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
           placeholder="Your message"
           aria-describedby="sender-error"
           onChange={(e) => setInputMessage(e.target.value)}
