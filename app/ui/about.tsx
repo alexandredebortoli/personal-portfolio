@@ -21,7 +21,7 @@ export default function About() {
         While graduating with a degree in{" "}
         <span className="font-medium">Computer Engineering</span>, I decided to
         pursue my passion for programming early-on. I enrolled in a trainee
-        program with partnership with my college and learned{" "}
+        program in partnership with my college and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
@@ -30,10 +30,8 @@ export default function About() {
         <span className="font-medium">
           React, Node.js, NestJS, Typescript and Postgres
         </span>
-        . I am also familiar with Python and SequelizeORM. I am always looking
-        to learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        engineer.
+        . I am also familiar with Python and Django. I am always looking to
+        learn new technologies.
       </p>
 
       <p>
@@ -41,8 +39,7 @@ export default function About() {
         playing video games, and watching movies. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
-        <span className="font-medium">observability and Grafana</span>. I'm also
-        learning how to play the guitar.
+        <span className="font-medium">observability and Grafana</span>.
       </p>
     </motion.section>
   );

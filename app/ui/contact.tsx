@@ -7,6 +7,7 @@ import { State, sendEmail } from "@/app/lib/actions";
 import { FaPaperPlane } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { motion } from "framer-motion";
 
 function SubmitBtn() {
   const { pending } = useFormStatus();
@@ -50,10 +51,22 @@ export default function Contact() {
   }, [state]);
 
   return (
-    <section
+    <motion.section
       id="contact"
       ref={ref}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
     >
       <SectionTitle>Contact me</SectionTitle>
       <p className="text-gray-700 -mt-5 dark:text-white/80">
@@ -107,6 +120,6 @@ export default function Contact() {
         </div>
         <SubmitBtn />
       </form>
-    </section>
+    </motion.section>
   );
 }
