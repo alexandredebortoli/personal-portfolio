@@ -1,17 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import profilePhoto from "@/public/profile_photo.png";
+import profilePhoto from "@/public/photo_alexandre.png";
+import profilePhotoLight from "@/public/photo_alexandre_light.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/app/lib/context/active-section-context";
+import { useTheme } from "@/app/lib/context/theme-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { theme } = useTheme();
 
   return (
     <section
@@ -30,16 +33,16 @@ export default function Intro() {
             }}
           >
             <Image
-              src={profilePhoto}
+              src={theme === "light" ? profilePhotoLight : profilePhoto}
               alt="Alexandre portrait"
-              quality="95"
+              quality="100"
               priority={true}
-              className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-56 w-56 rounded-full object-cover border-[0.35rem] border-white dark:border-black shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-7xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -61,10 +64,9 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I&apos;m Alexandre Debortoli.</span>{" "}
         I&apos;m a{" "}
-        <span className="font-bold">full-stack software engineer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">Node.js & React</span>.
+        <span className="font-bold">Full-Stack Software Engineer</span> with{" "}
+        <span className="font-bold">4+ years</span> of experience, building
+        scalable web & mobile applications.
       </motion.h1>
 
       <motion.div

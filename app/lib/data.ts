@@ -97,31 +97,37 @@ export const skillsData = [
 
 export const experiencesData = [
   {
+    title: "Senior Software Engineer",
+    description:
+      "I design and build scalable products and data systems across backend, frontend, and cloud infrastructure. My work spans from developing full-stack features with Django, FastAPI, React, and TypeScript to optimizing BigQuery and Airflow pipelines processing hundreds of millions of records daily. I’ve cut infrastructure costs, improved reliability, and explored LLM-powered AI integrations—turning complex technology into real, measurable impact.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - present",
+  },
+  {
     title: "Software Engineer",
     description:
       "Developed scalable distributed web applications for finance industry utilizing microservices architecture with Fastify, PostgreSQL, MongoDB, and AWS Cloud services (S3, SQS, Cognito). Enable communication through gRPC and HTTP protocols. Automate operational tasks and data manipulation in Python for on-call support and AWS management.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
+    date: "2023 - 2024",
   },
   {
-    title: "Software Engineer Intern",
+    title: "Software Engineer",
     description:
       "Developed and maintained scalable microservices, contributed to feature planning, design, and implementation. Conducted test automation (unit and integration testing) and demonstrated a keenness for learning new technologies.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
   },
   {
-    title: "Full-stack Developer Trainee",
+    title: "Full-stack Developer",
     description:
-      "Completed 200-hour full-stack development course, including practical assignments and final projects. Recognized as a top performer and awarded scholarship.",
+      "Completed 200-hour full-stack development internship, including practical assignments and final projects. Recognized as a top performer and awarded scholarship.",
     icon: React.createElement(FaReact),
     date: "2022",
   },
   {
     title: "Computer Enginnering",
-    description:
-      "Currently pursuing a Bachelor's Degree in Computer Engineering.",
+    description: "Bachelor's Degree in Computer Engineering.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021 - present",
+    date: "",
   },
 ] as const;

@@ -18,28 +18,27 @@ export default function About() {
     >
       <SectionTitle>About Me</SectionTitle>
       <p className="mb-3">
-        While graduating with a degree in{" "}
-        <span className="font-medium">Computer Engineering</span>, I decided to
-        pursue my passion for programming early-on. I enrolled in a trainee
-        program in partnership with my college and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        It still amazes me how a few lines of code can shape the way people live
+        and work. <br />
+        <br /> I&apos;m a{" "}
+        <span className="font-bold">Senior Software Engineer</span> who loves
+        turning ideas into scalable, meaningful products. I care about clean
+        architecture, thoughtful design, and using data to make smarter
+        decisions. <br />
+        <br /> Right now, I build full-stack solutions at Amicci using{" "}
         <span className="font-medium">
-          React, Node.js, NestJS, Typescript and Postgres
+          Node.js, Python, React, BigQuery, AWS, and GCP
         </span>
-        . I am also familiar with Python and Django. I am always looking to
-        learn new technologies.
-      </p>
-
-      <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        surfing, playing video games, and watching movies. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">observability and Grafana</span>.
+        . What drives me most is seeing technology help people do things they
+        couldn&apos;t do before.
+        <br />
+        <br />I believe curiosity is just as important as technical skill.
+        Outside of code, you&apos;ll usually find me exploring new ideas,
+        improving side projects, or reading about design and product thinking.
+        I&apos;m always looking for new ways to blend technology with purpose.
+        <br />
+        <br />
+        🌎 Always happy to connect!
       </p>
     </motion.section>
   );
